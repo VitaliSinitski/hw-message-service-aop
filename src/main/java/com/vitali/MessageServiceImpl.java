@@ -10,5 +10,10 @@ public class MessageServiceImpl implements MessageService {
     public void send(String message) {
         log.info("Sending message: {}", message);
     }
+
+    @Override
+    public void sendException() throws Exception {
+        throw new RuntimeException("Exception occurred in sendException method!");
+    }
 }
 

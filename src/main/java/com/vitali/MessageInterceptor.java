@@ -3,9 +3,11 @@ package com.vitali;
 import lombok.extern.slf4j.Slf4j;
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
+import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
 
 @Slf4j
+@Aspect
 @Component
 public class MessageInterceptor implements MethodInterceptor {
     @Override
